@@ -14,10 +14,10 @@ No account, no server.
 
 ## Deploying
 
-`dist/` is a static site. Host it anywhere that serves HTTPS (GitHub Pages, Netlify,
-Cloudflare Pages). HTTPS is required for the service worker and for installing to a
-phone's home screen. The build uses relative paths, so a sub-path such as
-`user.github.io/milepulse/` works without changes.
+Pushing to `main` runs `.github/workflows/pages.yml`, which tests, builds, and publishes `dist/` to
+GitHub Pages. One-time setup: in the repo's Settings > Pages, set Source to "GitHub Actions".
+Pages needs a public repo on GitHub's free plan. The site is static and needs HTTPS, which
+Pages provides; the build uses relative paths, so the `/milepulse/` sub-path works as is.
 
 ## Layout
 
